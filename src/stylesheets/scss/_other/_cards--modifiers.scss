@@ -1,0 +1,17 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.card{
+
+    &--front{
+        background: url('../../images/bg-card-front.png') no-repeat center;
+        background-size: cover;
+    }
+
+    &--back{
+        background: url('../../images/bg-card-back.png') no-repeat center;
+        background-size: cover;
+        top: 50%;
+        left: 20%;
+    }
+}

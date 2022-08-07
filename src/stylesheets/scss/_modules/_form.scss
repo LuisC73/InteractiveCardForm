@@ -1,0 +1,8 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.form{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+}

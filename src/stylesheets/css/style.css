@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../images/bg-main-desktop.png") no-repeat left;
+  background-size: 30%;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: hsl(270deg, 3%, 87%);
+  color: #fff;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: hsl(270deg, 3%, 87%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(270deg, 3%, 87%);
+  border-radius: 10px;
+}
+
+.card {
+  position: absolute;
+  width: 20rem;
+  height: 10rem;
+  top: 20%;
+  border-radius: 0.5rem;
+  color: #fff;
+  left: 15%;
+  padding: 1rem;
+}
+.card__logo {
+  width: 3.5rem;
+}
+
+.card--front {
+  background: url("../../images/bg-card-front.png") no-repeat center;
+  background-size: cover;
+}
+.card--back {
+  background: url("../../images/bg-card-back.png") no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 20%;
+}
+
+.form {
+  position: absolute;
+  right: 25%;
+  top: 30%;
+}
+
+.complete {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

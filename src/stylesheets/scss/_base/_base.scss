@@ -1,0 +1,22 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+body{
+    font-family: vars.$font;
+    overflow-x: hidden;
+    font-size: 18px;
+  
+}
+
+.main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../../images/bg-main-desktop.png') no-repeat left;
+    background-size: 30%;
+}
+
+
+
+.attribution { position: absolute;bottom: 0; left:50%; font-size: 11px; text-align: center; margin-top: 4rem; color: vars.$white;}
+.attribution a { color: hsl(228, 45%, 44%); }

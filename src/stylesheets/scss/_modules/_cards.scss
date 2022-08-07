@@ -1,0 +1,18 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.card{
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    top: 20%;
+    border-radius: .5rem;
+    color: #fff;
+    left: 15%;
+    padding: 1rem;
+
+    &__logo{
+        width: 3.5rem;
+    }
+
+}
