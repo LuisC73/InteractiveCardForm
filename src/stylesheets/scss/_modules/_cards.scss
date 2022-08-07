@@ -4,7 +4,7 @@
 .card{
     position: absolute;
     width: 20rem;
-    height: 10rem;
+    height: 10.4rem;
     top: 20%;
     border-radius: .5rem;
     color: #fff;
@@ -13,6 +13,23 @@
 
     &__logo{
         width: 3.5rem;
+    }
+    
+    &__info{
+        margin-top: 2.8rem;
+    }
+
+    &__number{
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    &__name,&__date{
+        font-size: .9rem;
+    }
+
+    &__flex{
+        @include mixin.flex(space-between,center,row)
     }
 
 }

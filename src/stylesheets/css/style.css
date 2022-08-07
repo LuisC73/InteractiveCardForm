@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb {
 .card {
   position: absolute;
   width: 20rem;
-  height: 10rem;
+  height: 10.4rem;
   top: 20%;
   border-radius: 0.5rem;
   color: #fff;
@@ -138,6 +138,22 @@ body::-webkit-scrollbar-thumb {
 }
 .card__logo {
   width: 3.5rem;
+}
+.card__info {
+  margin-top: 2.8rem;
+}
+.card__number {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.card__name, .card__date {
+  font-size: 0.9rem;
+}
+.card__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .card--front {
@@ -149,6 +165,11 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   top: 50%;
   left: 20%;
+}
+.card__number--back {
+  margin-top: 3.5rem;
+  font-size: 0.8rem;
+  margin-left: 15rem;
 }
 
 .form {
