@@ -1,0 +1,25 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.form{
+    &__input--date{
+        width: 45%;
+        
+        &:nth-child(2){
+            margin-left: .8rem;
+        }
+    }
+
+    &__input--cvc{
+        width: 95%;
+        margin-left: .8rem;
+    }
+
+    &__label--cvc{
+        margin-left: .8rem;
+    }
+
+    &__input--error{
+        border: 1px solid vars.$red;
+    }
+}

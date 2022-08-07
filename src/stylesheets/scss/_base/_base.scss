@@ -14,6 +14,11 @@ body{
     height: 100vh;
     background: url('../../images/bg-main-desktop.png') no-repeat left;
     background-size: 30%;
+
+    @include mixin.mediaMovil(){
+        background: url('../../images/bg-main-mobile.png') no-repeat top;
+        background-size: 100% 30%;
+    }
 }
 
 

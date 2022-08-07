@@ -22,6 +22,8 @@
     &__number{
         margin-bottom: 1rem;
         font-size: 1.4rem;
+        letter-spacing: .1rem;
+        text-align: center;
     }
 
     &__name,&__date{
@@ -29,7 +31,8 @@
     }
 
     &__flex{
-        @include mixin.flex(space-between,center,row)
+        @include mixin.flex(space-between,center,row);
+        margin: 0 .4rem;
     }
 
 }

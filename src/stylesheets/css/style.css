@@ -12,6 +12,12 @@ body {
   background: url("../../images/bg-main-desktop.png") no-repeat left;
   background-size: 30%;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    background: url("../../images/bg-main-mobile.png") no-repeat top;
+    background-size: 100% 30%;
+  }
+}
 
 .attribution {
   position: absolute;
@@ -145,6 +151,8 @@ body::-webkit-scrollbar-thumb {
 .card__number {
   margin-bottom: 1rem;
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
 }
 .card__name, .card__date {
   font-size: 0.9rem;
@@ -154,6 +162,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin: 0 0.4rem;
 }
 
 .card--front {
@@ -167,15 +176,73 @@ body::-webkit-scrollbar-thumb {
   left: 20%;
 }
 .card__number--back {
-  margin-top: 3.5rem;
+  margin-top: 3.6rem;
   font-size: 0.8rem;
-  margin-left: 15rem;
+  margin-left: 13rem;
 }
 
 .form {
   position: absolute;
-  right: 25%;
+  right: 20%;
   top: 30%;
+  width: 23%;
+}
+.form__label {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  display: inline;
+}
+.form__input {
+  border: 1px solid hsl(230deg, 7%, 84%);
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 0.4rem 0 1rem 0;
+  outline: none;
+}
+.form__input:focus {
+  border: 1px solid hsl(278deg, 94%, 30%);
+}
+.form__div {
+  width: 40%;
+}
+.form__date, .form__info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.form__cvc {
+  width: 60%;
+}
+.form__submit {
+  width: 100%;
+  background: hsl(278deg, 68%, 11%);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.form__input--date {
+  width: 45%;
+}
+.form__input--date:nth-child(2) {
+  margin-left: 0.8rem;
+}
+.form__input--cvc {
+  width: 95%;
+  margin-left: 0.8rem;
+}
+.form__label--cvc {
+  margin-left: 0.8rem;
+}
+.form__input--error {
+  border: 1px solid hsl(0deg, 100%, 66%);
 }
 
 .complete {

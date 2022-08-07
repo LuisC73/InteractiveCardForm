@@ -3,6 +3,52 @@
 
 .form{
     position: absolute;
-    right: 25%;
+    right: 20%;
     top: 30%;
+    width: 23%;
+
+
+    &__label{
+        text-transform: uppercase;
+        font-size: .6rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        display: inline;
+    }
+
+    &__input{
+        border: 1px solid vars.$gray;
+        border-radius: .4rem;
+        padding: .5rem .6rem;
+        font-size: .8rem;
+        width: 100%;
+        margin: .4rem 0 1rem 0;
+        outline: none;
+
+        &:focus{
+            border: 1px solid hsl(278, 94%, 30%);
+        }
+    }
+
+    &__div{
+        width: 40%;
+    }
+
+    &__date,&__info{
+        @include mixin.flex(start,center,row);
+    }
+
+    &__cvc{
+        width: 60%;
+    }
+
+    &__submit{
+        width: 100%;
+        background: map-get(vars.$violes, "veryDark" );
+        color: #fff;
+        font-size: .8rem;
+        padding: .7rem;
+        border-radius: .4rem;
+        cursor: pointer;
+    }
 }
