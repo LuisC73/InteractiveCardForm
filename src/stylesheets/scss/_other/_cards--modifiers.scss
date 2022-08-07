@@ -6,6 +6,12 @@
     &--front{
         background: url('../../images/bg-card-front.png') no-repeat center;
         background-size: cover;
+        z-index: 2;
+
+        @include mixin.mediaMovil(){
+            top: 17%;
+            left: 5%;
+        }
     }
 
     &--back{
@@ -13,11 +19,21 @@
         background-size: cover;
         top: 50%;
         left: 20%;
+        z-index: 1;
+        @include mixin.mediaMovil(){
+            top: 2%;
+            left: 20%;
+        }
     }
 
     &__number--back{
         margin-top: 3.6rem;
         font-size: .8rem;
         margin-left: 13rem;
+        @include mixin.mediaMovil(){
+            margin-top: 3rem;
+            margin-left: 12rem;
+            font-size: .6rem;
+        }
     }
 }

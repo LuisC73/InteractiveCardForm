@@ -13,7 +13,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: url('../../images/bg-main-desktop.png') no-repeat left;
-    background-size: 30%;
+    background-size: 30% 100%;
 
     @include mixin.mediaMovil(){
         background: url('../../images/bg-main-mobile.png') no-repeat top;
@@ -23,5 +23,5 @@ body{
 
 
 
-.attribution { position: absolute;bottom: 0; left:50%; font-size: 11px; text-align: center; margin-top: 4rem; color: vars.$white;}
+.attribution { position: absolute;bottom: 0; left:50%; font-size: 11px; text-align: center; margin-top: 4rem; color: vars.$white;@include mixin.mediaMovil(){left: 38%;} }
 .attribution a { color: hsl(228, 45%, 44%); }

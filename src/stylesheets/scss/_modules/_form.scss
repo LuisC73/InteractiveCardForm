@@ -7,6 +7,12 @@
     top: 30%;
     width: 23%;
 
+    @include mixin.mediaMovil(){
+        top: 42%;
+        right: 5%;
+        width: 90%;
+        margin: 0 auto;
+    }
 
     &__label{
         text-transform: uppercase;

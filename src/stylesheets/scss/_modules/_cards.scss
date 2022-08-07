@@ -11,12 +11,25 @@
     left: 15%;
     padding: 1rem;
 
+    @include mixin.mediaMovil(){
+        width: 17rem;
+        height: 9.5rem;
+    }
+
     &__logo{
         width: 3.5rem;
+
+        @include mixin.mediaMovil(){
+            width: 3rem;
+        }
     }
     
     &__info{
         margin-top: 2.8rem;
+
+        @include mixin.mediaMovil(){
+            margin-top: 2rem;
+        }
     }
 
     &__number{
@@ -24,15 +37,27 @@
         font-size: 1.4rem;
         letter-spacing: .1rem;
         text-align: center;
+
+        @include mixin.mediaMovil(){
+            font-size: 1.1rem;
+        }
     }
 
     &__name,&__date{
         font-size: .9rem;
+
+        @include mixin.mediaMovil(){
+            font-size: .7rem;
+        }
     }
 
     &__flex{
         @include mixin.flex(space-between,center,row);
         margin: 0 .4rem;
+
+        @include mixin.mediaMovil(){
+            margin: 0 .5rem;
+        }
     }
 
 }

@@ -10,7 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: url("../../images/bg-main-desktop.png") no-repeat left;
-  background-size: 30%;
+  background-size: 30% 100%;
 }
 @media screen and (max-width: 768px) {
   .main {
@@ -27,6 +27,11 @@ body {
   text-align: center;
   margin-top: 4rem;
   color: hsl(0deg, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .attribution {
+    left: 38%;
+  }
 }
 
 .attribution a {
@@ -142,11 +147,27 @@ body::-webkit-scrollbar-thumb {
   left: 15%;
   padding: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .card {
+    width: 17rem;
+    height: 9.5rem;
+  }
+}
 .card__logo {
   width: 3.5rem;
 }
+@media screen and (max-width: 768px) {
+  .card__logo {
+    width: 3rem;
+  }
+}
 .card__info {
   margin-top: 2.8rem;
+}
+@media screen and (max-width: 768px) {
+  .card__info {
+    margin-top: 2rem;
+  }
 }
 .card__number {
   margin-bottom: 1rem;
@@ -154,8 +175,18 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.1rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .card__number {
+    font-size: 1.1rem;
+  }
+}
 .card__name, .card__date {
   font-size: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  .card__name, .card__date {
+    font-size: 0.7rem;
+  }
 }
 .card__flex {
   display: flex;
@@ -164,21 +195,47 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   margin: 0 0.4rem;
 }
+@media screen and (max-width: 768px) {
+  .card__flex {
+    margin: 0 0.5rem;
+  }
+}
 
 .card--front {
   background: url("../../images/bg-card-front.png") no-repeat center;
   background-size: cover;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .card--front {
+    top: 17%;
+    left: 5%;
+  }
 }
 .card--back {
   background: url("../../images/bg-card-back.png") no-repeat center;
   background-size: cover;
   top: 50%;
   left: 20%;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .card--back {
+    top: 2%;
+    left: 20%;
+  }
 }
 .card__number--back {
   margin-top: 3.6rem;
   font-size: 0.8rem;
   margin-left: 13rem;
+}
+@media screen and (max-width: 768px) {
+  .card__number--back {
+    margin-top: 3rem;
+    margin-left: 12rem;
+    font-size: 0.6rem;
+  }
 }
 
 .form {
@@ -186,6 +243,14 @@ body::-webkit-scrollbar-thumb {
   right: 20%;
   top: 30%;
   width: 23%;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    top: 42%;
+    right: 5%;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .form__label {
   text-transform: uppercase;
