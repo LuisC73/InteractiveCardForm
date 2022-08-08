@@ -9,8 +9,8 @@
 
     @include mixin.mediaMovil(){
         top: 42%;
-        right: 5%;
-        width: 90%;
+        right: 8%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -20,6 +20,7 @@
         font-weight: bold;
         letter-spacing: .1rem;
         display: inline;
+
     }
 
     &__input{
@@ -28,7 +29,7 @@
         padding: .5rem .6rem;
         font-size: .8rem;
         width: 100%;
-        margin: .4rem 0 1rem 0;
+        margin: .4rem 0 .3rem 0;
         outline: none;
 
         &:focus{
@@ -56,5 +57,16 @@
         padding: .7rem;
         border-radius: .4rem;
         cursor: pointer;
+    }
+
+    &__error{
+        font-size: .8rem;
+        color: vars.$red;
+        margin-bottom: 1rem;
+        display: block;
+
+        &:last-child{
+            margin-left: .8rem;
+        }
     }
 }

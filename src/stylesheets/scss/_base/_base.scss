@@ -23,5 +23,5 @@ body{
 
 
 
-.attribution { position: absolute;bottom: 0; left:50%; font-size: 11px; text-align: center; margin-top: 4rem; color: vars.$white;@include mixin.mediaMovil(){left: 38%;} }
+.attribution { position: absolute;bottom: 0; left:50%; font-size: 11px; text-align: center; margin-top: 4rem; color: vars.$white;@include mixin.mediaMovil(){display: none;} }
 .attribution a { color: hsl(228, 45%, 44%); }

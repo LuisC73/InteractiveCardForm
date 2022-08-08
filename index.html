@@ -34,50 +34,51 @@
       </div>
 
       <form class="form">
-        <label for="name" class="form__label">Cardholder Name</label>
+        <label for="card-name" class="form__label">Cardholder Name</label>
         <input
           type="text"
           placeholder="e.g. Jane Appleseed"
           class="form__input"
-          id="name"
+          id="card-name"
         />
-        <label for="number" class="form__label" class="form__input"
+        <span class="form__error"></span>
+        <label for="card-number" class="form__label" class="form__input"
           >Card Number</label
         >
-        <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="number" class="form__input" />
-       
+        <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="card-number" class="form__input" />
+        <span class="form__error"></span>
         <div class="form__info">
           <div class="form__div">
-            <label for="month" class="form__label">Exp. Date (MM/YY)</label>
+            <label for="card-month" class="form__label">Exp. Date (MM/YY)</label>
             <div class="form__date">
               <input
               type="text"
               placeholder="MM"
               class="form__input form__input--date"
-              id="month"
+              id="card-month"
             />
             <input
               type="text"
               placeholder="YY"
               class="form__input form__input--date"
-              id="year"
+              id="card-year"
             />
             </div>
-           
+            <span class="form__error"></span> 
           </div>
           <div class="form__cvc">
-            <label for="cvc" class="form__label form__label--cvc">CVC</label>
+            <label for="card-cvc" class="form__label form__label--cvc">CVC</label>
             <input
             type="number"
             placeholder="e.g. 123"
             class="form__input form__input--cvc"
-            id="cvc"
+            id="card-cvc"
           />
+          <span class="form__error"></span>
           </div>
-          
         </div>
        
-        <input type="submit" value="Confirm" id="confirm" class="form__submit"/>
+        <input type="submit" value="Confirm" id="card-confirm" class="form__submit"/>
       </form>
 
       <!-- Completed state start -->
@@ -93,6 +94,9 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Luis Miguel Castro</a>.
+
+
+      <script src="./src/js/app.js"></script>
     </div>
   </body>
 </html>
