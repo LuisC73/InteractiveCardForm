@@ -6,7 +6,7 @@
     right: 20%;
     top: 30%;
     width: 23%;
-
+    overflow: hidden;
     @include mixin.mediaMovil(){
         top: 42%;
         right: 8%;
@@ -42,11 +42,11 @@
     }
 
     &__date,&__info{
-        @include mixin.flex(start,center,row);
+        @include mixin.flex(start,start,row);
     }
 
     &__cvc{
-        width: 60%;
+        width: 59%;
     }
 
     &__submit{

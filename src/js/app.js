@@ -16,8 +16,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 
     $cardButton.addEventListener('click',(e) =>{
         e.preventDefault()
-        console.log($cardName.value)
-        console.log( $textsError[2]);
     })
 })
 
@@ -31,16 +29,23 @@ function handleName(){
 }
 
 function handleNumber(){
+
+    // (typeof $cardNumber.value === "number") 
+    //     ? $textsError[1].textContent = "Wrong formant,numbers only"
+    //     : $textsError[1].textContent = ""
     
     ($cardNumber.value === "")
        ? $textsError[1].textContent = "Can´t be blank"
        : $textsError[1].textContent = ""
+
+    if ($cardNumber.value.length > 16) {$cardNumber.value = $cardNumber.value.slice(0,16); }
     
 }
 
 function handleDate(){
 
-    ($cardMonth.value === "" && $cardYear.value === "")  ? $textsError[2].textContent = "Can´t be blank" : $textsError[2].textContent = ""
+    ($cardMonth.value === "" && $cardYear.value === "")  
+        ? $textsError[2].textContent = "Can´t be blank" : $textsError[2].textContent = ""
 }
 
 function handleCvc(){
@@ -48,5 +53,8 @@ function handleCvc(){
     ($cardCvc.value === "")
         ? $textsError[3].textContent = "Can´t be blank"
         : $textsError[3].textContent = ""
+
+        if ($cardCvc.value.length > 3) {$cardCvc.value = $cardCvc.value.slice(0,3); }
+            
     
 }

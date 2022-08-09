@@ -3,7 +3,7 @@
 
 body{
     font-family: vars.$font;
-    overflow-x: hidden;
+    overflow: hidden;
     font-size: 18px;
   
 }
@@ -14,7 +14,7 @@ body{
     height: 100vh;
     background: url('../../images/bg-main-desktop.png') no-repeat left;
     background-size: 30% 100%;
-
+    overflow: hidden;
     @include mixin.mediaMovil(){
         background: url('../../images/bg-main-mobile.png') no-repeat top;
         background-size: 100% 30%;
