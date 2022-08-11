@@ -323,6 +323,43 @@ body::-webkit-scrollbar-thumb {
 
 .complete {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+}
+@media screen and (max-width: 768px) {
+  .complete {
+    top: 50%;
+    right: 20%;
+  }
+}
+.complete__img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.complete__h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.complete__p {
+  font-size: 1rem;
+  color: hsl(279deg, 6%, 55%);
+  margin: 1rem 0;
+}
+.complete__button {
+  width: 100%;
+  background: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.complete__active {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

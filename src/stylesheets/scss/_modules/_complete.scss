@@ -3,4 +3,45 @@
 
 .complete{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+
+    @include mixin.mediaMovil(){
+        top: 50%;
+        right: 20%;
+    }
+
+    &__img{
+        width: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__h1{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    &__p{
+        font-size: 1rem;
+        color: map-get(vars.$violes , "dark");
+        margin: 1rem 0;
+    }
+
+    &__button{
+        width: 100%;
+        background: map-get(vars.$violes, "veryDark" );
+        color: vars.$white;;
+        font-size: .8rem;
+        padding: .7rem;
+        border-radius: .4rem;
+        cursor: pointer;
+    }
+
+    &__active{
+        display: flex;
+    }
 }
